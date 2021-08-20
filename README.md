@@ -8,6 +8,7 @@
 
 <br>
 O component zd-highlight é usado para mostrar o código usando uma das linguagens suportadas pelo Prism Js
+
 <p align="center">
   <img alt="Zd-highlight" src=".github/Zd-highlight.jpg" width="100%">
 </p>
@@ -15,7 +16,7 @@ O component zd-highlight é usado para mostrar o código usando uma das linguage
 ## Instalação
 
 Para instalar o pacote basta rodar o seguinte comando:
-### `npm i zd-highlight`
+`npm i zd-highlight`
 Com isso, dois pacotes serão instalados: o zd-highlight-common e o zd-highlight-vue.
 Após a instalação, é necessário que você você importe o pacote zd-rich-text-vue dentro de seu arquivo de configuração `zeedhi.ts`
 
