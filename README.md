@@ -8,7 +8,7 @@
 
 <br>
 O component zd-highlight é usado para mostrar o código usando uma das linguagens suportadas pelo Prism Js
-
+<br>
 <p align="center">
   <img alt="Zd-highlight" src=".github/Zd-highlight.jpg" width="100%">
 </p>
@@ -110,7 +110,7 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
   </tbody>
 </table>
 
-Este projeto foi desenvolvido com ❤️ por **[@John Everton](https://www.linkedin.com/in/john-everton01/)**. <br>
+Este componente foi desenvolvido com ❤️ por **[@John Everton](https://www.linkedin.com/in/john-everton01/)**. <br>
 Se isso te ajudou, dê uma ⭐, isso vai me ajudar também! 😉
 
 <hr>
