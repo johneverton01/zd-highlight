@@ -1,0 +1,7 @@
+node_modules
+src
+package-lock.json
+rollup.config.js
+tsconfig.json
+tslint.json
+typedoc.json

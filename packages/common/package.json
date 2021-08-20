@@ -1,0 +1,21 @@
+{
+  "name": "zd-highlight-common",
+  "version": "1.0.0",
+  "description": "HighlightCommon",
+  "main": "dist/highlight-common.umd.js",
+  "module": "dist/highlight-common.esm.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . --fix --ext .ts",
+    "test": "jest",
+    "watch": "npm run build -- -w"
+  },
+  "dependencies": {
+    "prismjs": "^1.22.0"
+  },
+  "peerDependencies": {
+    "@zeedhi/common": "*",
+    "@zeedhi/core": "*"
+  }
+}

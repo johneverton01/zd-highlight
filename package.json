@@ -1,0 +1,41 @@
+{
+  "name": "zeedhi-highlight",
+  "version": "1.0.0",
+  "description": "",
+  "author": "John Everton <johneverton44@gmail.com>",
+  "scripts": {
+    "build": "lerna run build",
+    "init": "lerna bootstrap",
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "watch": "lerna run --parallel --no-bail watch",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "zd-highlight-common": "file:packages/common",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "@zeedhi/common": "*",
+    "@zeedhi/core": "*",
+    "@zeedhi/vuetify": "*",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "jest": "^26.6.3",
+    "lerna": "^3.22.1",
+    "rollup": "^2.36.1",
+    "rollup-plugin-scss": "^2.6.1",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^3.9.7",
+    "rollup-plugin-vue": "^5.1.9",
+    "ts-jest": "^26.4.4",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "@types/jest": "^26.0.19",
+    "@types/prismjs": "^1.16.6"
+  },
+  "license": "ISC"
+}
