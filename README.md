@@ -14,9 +14,9 @@
 
 ## Instalação
 
-Para instalar o pacote basta rodar o seguinte comando:
-`npm i zd-highlight`
-Com isso, dois pacotes serão instalados: o zd-highlight-common e o zd-highlight-vue.
+Para instalar o pacote basta rodar o seguinte comando:\
+`npm i zd-highlight`\
+Com isso, dois pacotes serão instalados: o zd-highlight-common e o zd-highlight-vue.\
 Após a instalação, é necessário que você você importe o pacote zd-rich-text-vue dentro de seu arquivo de configuração `zeedhi.ts`
 
 ```
