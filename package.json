@@ -37,5 +37,19 @@
     "@types/jest": "^26.0.19",
     "@types/prismjs": "^1.16.6"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johneverton01/zd-highlight.git"
+  },
+  "keywords": [
+    "zeedhi",
+    "highlight",
+    "component"
+  ],
+  "bugs": {
+    "url": "https://github.com/johneverton01/zd-highlight/issues"
+  },
+  "homepage": "https://github.com/johneverton01/zd-highlight#readme"
 }
