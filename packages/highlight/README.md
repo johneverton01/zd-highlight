@@ -1,15 +1,9 @@
 # Componente Highlight para Zeedhi
 
-<p align="center">
-  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#uso-básico">Uso Básico</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#propriedades">Propriedades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
-
 <p> O component zd-highlight é usado para mostrar o código usando uma das linguagens suportadas pelo Prism Js</p>
 
 <p align="center">
-  <img alt="Zd-highlight" src=".github/Zd-highlight.jpg" width="100%">
+  <img alt="Zd-highlight" src="https://i.ibb.co/GspD6Tg/zd-higlint.jpg" width="100%">
 </p>
 
 ## Instalação
