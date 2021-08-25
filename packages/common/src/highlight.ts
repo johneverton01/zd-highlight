@@ -3,8 +3,10 @@ import { IHighlight } from './interfaces';
 import { Prism } from './prism';
 
 export class Highlight extends ComponentRender implements IHighlight {
-  /* Current value of the editor i.e. the code to display */
-  public code: string = '';
+    /**
+   * Max height in pixels. 'none' means no limit.
+   */
+  public maxHeight: string = 'none';
 
   /* Callback which will receive text to highlight.
   *You'll need to return an HTML string with syntax
@@ -27,6 +29,8 @@ export class Highlight extends ComponentRender implements IHighlight {
   /* Whether to use spaces for indentation */
   public insertSpaces: boolean = true;
 
+  public code: string = '';
+
   /* Whether the editor should ignore tab key presses so
   *that keyboard users can tab past the editor
   */
@@ -37,6 +41,7 @@ export class Highlight extends ComponentRender implements IHighlight {
     this.code = this.getInitValue('code', props.code, this.code);
     this.readonly = this.getInitValue('readonly', props.readonly, this.readonly);
     this.lineNumbers = this.getInitValue('lineNumbers', props.lineNumbers, this.lineNumbers);
+    this.maxHeight = this.getInitValue('maxHeight', props.maxHeight, this.maxHeight);
     this.tabSize = this.getInitValue('tabSize', props.tabSize, this.tabSize);
     this.insertSpaces = this.getInitValue('insertSpaces', props.insertSpaces, this.insertSpaces);
     this.ignoreTabKey = this.getInitValue('ignoreTabKey', props.ignoreTabKey, this.ignoreTabKey);

@@ -4,7 +4,9 @@ import { ZdComponentRender } from '@zeedhi/vuetify';
 
 @Component
 export default class ZdHighlight extends ZdComponentRender {
-  @Prop({ type: String, default: '' }) public code!:string;
+  @Prop({ type: [Object, String, Array], default: '' }) public code!:object | string | string[];
+
+  @Prop({ type: [Object, String, Array], default: '' }) public codeValue!:object | string | string[];
 
   @Prop({ type: Boolean, default: false }) public readonly!:boolean;
 
@@ -19,6 +21,8 @@ export default class ZdHighlight extends ZdComponentRender {
   @Prop({ type: Boolean, default: false }) public ignoreTabKey!:boolean;
 
   @Prop({ type: String, default: 'ts' }) public language!:string;
+
+  @Prop({ type: String, default: 'none' }) public maxHeight!:string;
 
   public instance!: Highlight;
 

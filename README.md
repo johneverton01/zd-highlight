@@ -17,7 +17,7 @@
 Para instalar o pacote basta rodar o seguinte comando:\
 `npm i zd-highlight`\
 Com isso, dois pacotes serão instalados: o zd-highlight-common e o zd-highlight-vue.\
-Após a instalação, é necessário que você você importe o pacote zd-rich-text-vue dentro de seu arquivo de configuração `zeedhi.ts`
+Após a instalação, é necessário que você você importe o pacote zd-highlight-vue dentro de seu arquivo de configuração `zeedhi.ts`
 
 ```
 import { Highlight } from 'zd-highlight-vue';
@@ -63,6 +63,24 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
       <td>Define se o código é somente leitura</td>
     </tr>
     <tr>
+      <td>maxHeight</td>
+      <td>string</td>
+      <td>none</td>
+      <td>Define a altura máxima que o textarea vai ter</td>
+    </tr>
+    <tr>
+      <td>cssClass/td>
+      <td>string</td>
+      <td></td>
+      <td>Define uma class no component</td>
+    </tr>
+    <tr>
+      <td>cssStyle</td>
+      <td>string | object</td>
+      <td></td>
+      <td>Define um style in line no component</td>
+    </tr>
+    <tr>
       <td>lineNumbers</td>
       <td>boolean</td>
       <td>false</td>
@@ -103,7 +121,7 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
           - css
           - json
           - bash, shell
-          Mais detalhes em **[Prism JS](https://rocketseat.com.br/)**
+          Mais detalhes em <a href="https://rocketseat.com.br/" target="_black" >Prism JS</a>
       </td>
     </tr>
   </tbody>

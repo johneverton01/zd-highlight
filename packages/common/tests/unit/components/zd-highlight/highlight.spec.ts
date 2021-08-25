@@ -11,6 +11,7 @@ describe('Highlight', () => {
       expect(instance.tabSize).toBe(2);
       expect(instance.insertSpaces).toBeTruthy();
       expect(instance.ignoreTabKey).toBeFalsy();
+      expect(instance.maxHeight).toBe('none');
       expect(instance.language).toBe('ts');
     });
 
@@ -26,6 +27,7 @@ describe('Highlight', () => {
         insertSpaces: false,
         ignoreTabKey: true,
         tabSize: '4',
+        maxHeight: '150',
       });
       expect(instance.code).toBe('console.log("oi")');
       expect(instance.readonly).toBeTruthy();
@@ -35,6 +37,7 @@ describe('Highlight', () => {
       expect(instance.insertSpaces).toBeFalsy();
       expect(instance.ignoreTabKey).toBeTruthy();
       expect(instance.language).toBe('js');
+      expect(instance.maxHeight).toBe('150');
       expect(instance.getHighlightedCode()).toBe('console<span class="token punctuation">.</span>'
       + '<span class="token function">log</span><span class="token punctuation">('
       + '</span><span class="token string">"oi"</span><span class="token punctuation">)</span>');
