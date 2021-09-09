@@ -3,7 +3,7 @@ import { IHighlight } from './interfaces';
 import { Prism } from './prism';
 
 export class Highlight extends ComponentRender implements IHighlight {
-    /**
+  /**
    * Max height in pixels. 'none' means no limit.
    */
   public maxHeight: string = 'none';
@@ -31,6 +31,8 @@ export class Highlight extends ComponentRender implements IHighlight {
 
   public code: string = '';
 
+  public loadExtraLanguages: string = '';
+
   /* Whether the editor should ignore tab key presses so
   *that keyboard users can tab past the editor
   */
@@ -46,6 +48,7 @@ export class Highlight extends ComponentRender implements IHighlight {
     this.insertSpaces = this.getInitValue('insertSpaces', props.insertSpaces, this.insertSpaces);
     this.ignoreTabKey = this.getInitValue('ignoreTabKey', props.ignoreTabKey, this.ignoreTabKey);
     this.language = this.getInitValue('language', props.language, this.language);
+    this.loadExtraLanguages = this.getInitValue('loadExtraLanguages', props.loadExtraLanguages, this.loadExtraLanguages);
     this.createAccessors();
   }
 
@@ -55,4 +58,5 @@ export class Highlight extends ComponentRender implements IHighlight {
   public getHighlightedCode() {
     return Prism.highlight(this.code, Prism.languages[this.language], this.language);
   }
+
 }

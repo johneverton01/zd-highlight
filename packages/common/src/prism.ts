@@ -10,6 +10,14 @@ import 'prismjs/components/prism-yaml.min';
 import 'prismjs/components/prism-docker.min';
 import 'prismjs/components/prism-sql.min';
 import 'prismjs/components/prism-groovy.min';
+import 'prismjs/components/prism-markup-templating.min';
+import 'prismjs/components/prism-php.min';
+import 'prismjs/components/prism-c.min';
+import 'prismjs/components/prism-cpp.min';
+import 'prismjs/components/prism-csharp.min';
+import 'prismjs/components/prism-python.min';
+import 'prismjs/components/prism-swift.min';
+import 'prismjs/components/prism-go.min';
 
 export { Prism };
 export * from 'prismjs';

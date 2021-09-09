@@ -11,12 +11,12 @@
 Para instalar o pacote basta rodar o seguinte comando:\
 `npm i zd-highlight`\
 Com isso, dois pacotes serão instalados: o zd-highlight-common e o zd-highlight-vue.\
-Após a instalação, é necessário que você você importe o pacote zd-highlight-vue dentro de seu arquivo de configuração `zeedhi.ts`
+Após a instalação, é necessário que você importe o pacote zd-highlight-vue dentro de seu arquivo de configuração `zeedhi.ts`
 
 ```
-import { Highlight } from 'zd-highlight-vue';
+import Highlight from 'zd-highlight';
 
-Vue.component('ZdHighlight', Highlight);
+Vue.component('ZdHighlight', Highlight.ZdHighlight);
 ```
 
 Já o pacote zd-highlight-common deve ser importado no arquivo controller do componente.
@@ -115,7 +115,7 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
           - css
           - json
           - bash, shell
-          Mais detalhes em <a href="https://rocketseat.com.br/" target="_black" >Prism JS</a>
+          Mais detalhes em <a href="https://prismjs.com/" target="_black" >Prism JS</a>
       </td>
     </tr>
   </tbody>

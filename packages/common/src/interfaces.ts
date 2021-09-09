@@ -10,4 +10,5 @@ export interface IHighlight extends IComponentRender {
   insertSpaces?: boolean;
   ignoreTabKey?: boolean;
   language?: string;
+  loadExtraLanguages?: string;
 }
