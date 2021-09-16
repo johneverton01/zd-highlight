@@ -31,7 +31,7 @@ export class Highlight extends ComponentRender implements IHighlight {
 
   public code: string = '';
 
-  public loadExtraLanguages: string = '';
+  public loadExtraLanguages?: string | Function;
 
   /* Whether the editor should ignore tab key presses so
   *that keyboard users can tab past the editor
@@ -56,7 +56,9 @@ export class Highlight extends ComponentRender implements IHighlight {
    * Get the code highlighted
    */
   public getHighlightedCode() {
+    if (typeof this.loadExtraLanguages === 'function') {
+      return this.loadExtraLanguages();
+    }
     return Prism.highlight(this.code, Prism.languages[this.language], this.language);
   }
-
 }

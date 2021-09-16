@@ -22,7 +22,7 @@ export default class ZdHighlight extends ZdComponentRender {
 
   @Prop({ type: String, default: 'none' }) public maxHeight!:string;
 
-  @Prop({ type: String, default: '' }) public loadExtraLanguages!:string;
+  @Prop({ type: [String, Function], default: '' }) public loadExtraLanguages!:string | Function;
 
   public instance!: Highlight;
 

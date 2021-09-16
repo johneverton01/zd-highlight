@@ -87,6 +87,12 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
       <td>Define se deve mostra o número das linhas</td>
     </tr>
     <tr>
+      <td>loadExtraLanguages</td>
+      <td>string | Function</td>
+      <td>function</td>
+      <td>Define uma função para carregar novas linguagens</td>
+    </tr>
+    <tr>
       <td>autoStyleLineNumbers</td>
       <td>boolean</td>
       <td>true</td>
@@ -115,17 +121,58 @@ Para usar, defina a propriedade component como 'ZdHighlight'.
       <td>string</td>
       <td>ts</td>
       <td>Código de idioma a ser usado pelo highlight:
-          - typescript, ts
-          - javascript, js
-          - html
-          - css
-          - json
-          - bash, shell
+      <ul>
+          <li>- typescript, ts</li>
+          <li>- javascript, js</li>
+          <li>- html</li>
+          <li>- css</li>
+          <li>- json</li>
+          <li>- bash, shell</li>
+        </ul>
           Mais detalhes em <a href="https://prismjs.com/" target="_black" >Prism JS</a>
       </td>
     </tr>
   </tbody>
 </table>
+
+<hr>
+
+## Importar outras linguagens
+
+Para importar alguma linguagem que não estão listadas, mas que o <a href="https://prismjs.com/" target="_black" >Prism JS</a> da suporte basta seguir o examplo:
+
+Intale o prismjs na sua aplicação
+
+```
+npm install prismjs
+```
+
+Utilize a propriedade 'loadExtraLanguages' para criar sua função que ira carregar a linguagem desejada
+
+```
+{
+  "name": "componentName",
+  "component": "ZdHighlight",
+  "code": "",
+  "language": "php",
+  "loadExtraLanguages": "{{MyController.loadLanguage}}"
+}
+```
+
+No seu controller utilize o seguinte código:
+
+```
+import Prism from 'prismjs';
+import 'prismjs/components/prism-markup-templating.min';
+import 'prismjs/components/prism-php.min';
+
+export class MyController {
+   public loadLanguage() {
+    const { code, language } = Metadata.getInstance<Highlight>('codeEditorResultBasicUsage');
+    return Prism.highlight(code, Prism.languages[language], language);
+  }
+}
+```
 
 Este componente foi desenvolvido com ❤️ por **[@John Everton](https://www.linkedin.com/in/john-everton01/)**. <br>
 Se isso te ajudou, dê uma ⭐, isso vai me ajudar também! 😉
