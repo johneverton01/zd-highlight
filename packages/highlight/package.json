@@ -1,11 +1,11 @@
 {
   "name": "zd-highlight",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "ZdHighlight",
   "author": "John Everton <johneverton44@gmail.com>",
   "dependencies": {
-    "zd-highlight-common": "^1.0.12",
-    "zd-highlight-vue": "^1.0.12"
+    "zd-highlight-common": "^1.1.0",
+    "zd-highlight-vue": "^1.1.0"
   },
   "homepage": "https://github.com/johneverton01/zd-highlight#readme"
 }
