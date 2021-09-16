@@ -42,5 +42,18 @@ describe('Highlight', () => {
       + '<span class="token function">log</span><span class="token punctuation">('
       + '</span><span class="token string">"oi"</span><span class="token punctuation">)</span>');
     });
+
+    it('should overwrite getHighlightedCode', () => {
+      const instance = new Highlight({
+        name: 'highlight',
+        component: 'Highlight',
+      });
+      instance.loadExtraLanguages = () => true;
+
+      if (typeof instance.loadExtraLanguages === 'function') {
+        instance.getHighlightedCode();
+        expect(instance.getHighlightedCode).toBeTruthy();
+      }
+    });
   });
 });
